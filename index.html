@@ -18,9 +18,17 @@
     </head>
     
     <body>
-        <div id="map"></div>
-        <div class='custom-popup' id="custom-popup-id"></div>
-        
+        <!-- <div id="map"></div>
+        <div class='custom-popup' id="custom-popup-id"></div> -->
+        <div id="container">
+            <div id="map"></div>
+            <div id="sidebar">
+              <h3 style="flex-grow: 0">Request</h3>
+              <pre style="flex-grow: 1" id="request"></pre>
+              <h3 style="flex-grow: 0">Response</h3>
+              <pre style="flex-grow: 1" id="response"></pre>
+            </div>
+        </div>
         <script src="./headerTileLayer.js"></script>
         <script src="./index.js"></script>
         <script type="text/javascript" src="https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.js" ></script>
